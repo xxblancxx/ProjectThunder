@@ -6,6 +6,7 @@ using System.Collections;
 public class NetworkScript : MonoBehaviour
 {
     public Vector2 spawnPosition;
+    private RoomOptions newRoomOptions;
 
     private GameObject myPlayer;
     // Use this for initialization
@@ -27,14 +28,18 @@ public class NetworkScript : MonoBehaviour
 
     void OnJoinedLobby()
     {
-        PhotonNetwork.JoinRandomRoom();
+        newRoomOptions = new RoomOptions();
+        newRoomOptions.isOpen = true;
+        newRoomOptions.isVisible = true;
+        newRoomOptions.maxPlayers = 2;
+        PhotonNetwork.JoinOrCreateRoom("BeginningRoom", newRoomOptions, null);
 
     }
 
     void OnPhotonRandomJoinFailed()
     {
         Debug.Log("JoinFailed was Hit");
-        PhotonNetwork.CreateRoom(null);
+        PhotonNetwork.CreateRoom("BeginningRoom");
     }
 
     void OnJoinedRoom()

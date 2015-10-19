@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets;
 
 public class DoorScript : MonoBehaviour
 {
     public int sceneToChangeTo;
-    public Vector2 positionInNextScene;
+    public Transform destination;
+    public float maxXPos;
+    public float minXPos;
+    public float maxYPos;
+    public float minYPos;
     // Use this for initialization
     void Start()
     {
@@ -19,8 +24,17 @@ public class DoorScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        var player = other.transform.FindChild("Player");
-        Application.LoadLevel(sceneToChangeTo);
-        player.transform.position = positionInNextScene;
+        Debug.Log(other.gameObject.name);
+        other.transform.position = destination.position;
+        // Boundary Control Objects.
+
+        CameraScript cam = other.transform.parent.Find("Main Camera").GetComponent<CameraScript>();
+        //Boundary Control
+        cam.maxXPos = maxXPos;
+        cam.maxYPos = maxYPos;
+        cam.minXPos = minXPos;
+        cam.minYPos = minYPos;
+
+
     }
 }
