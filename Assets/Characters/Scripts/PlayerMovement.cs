@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private float runSpeed;
     public float increasedSpeed;
     public float walkSpeed;
+
+    
     // Use this for initialization
     void Start()
     {
