@@ -54,5 +54,6 @@ public class NetworkScript : MonoBehaviour
         myPlayer.GetComponentInChildren<PlayerMovement>().enabled = true;
         myPlayer.GetComponentInChildren<CameraScript>().enabled = true;
         myPlayer.GetComponentInChildren<Camera>().enabled = true;
+        myPlayer.tag = "Player";
     }
 }
