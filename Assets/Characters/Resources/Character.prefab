@@ -31,9 +31,10 @@ GameObject:
   - 114: {fileID: 11409932}
   - 60: {fileID: 6007958}
   - 114: {fileID: 11455988}
+  - 114: {fileID: 11490740}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,14 +160,18 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -.0621809959, y: .0417095125}
-      - {x: -.062933445, y: .0436148047}
-      - {x: -.0572781563, y: -.0832011551}
-      - {x: -.0544958115, y: -.159999996}
-      - {x: .077147007, y: -.162516832}
-      - {x: .0790762901, y: -.0964740217}
-      - {x: .0768561363, y: .0414007008}
-      - {x: .00946235657, y: .0377126262}
+    - - {x: .204999998, y: .174999997}
+      - {x: .125, y: .215000004}
+      - {x: -.075000003, y: .215000004}
+      - {x: -.135000005, y: .204999998}
+      - {x: -.224999994, y: .125}
+      - {x: -.224999994, y: -.104999997}
+      - {x: -.194999993, y: -.165000007}
+      - {x: .00499999989, y: -.204999998}
+      - {x: .165000007, y: -.204999998}
+      - {x: .204999998, y: -.144999996}
+      - {x: .224999994, y: -.0549999997}
+      - {x: .224999994, y: .155000001}
 --- !u!81 &8159188
 AudioListener:
   m_ObjectHideFlags: 1
@@ -272,6 +277,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab037de1b1e3844a53647e6f182ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11490740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c72e0bf306d5ab46a4903bc72a80351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tomatoImage: {fileID: 2800000, guid: d4f5e31ebbc9b1d4d8a98ec0a2c81edf, type: 3}
+  tomatoCount: 0
 --- !u!114 &11497850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,7 +365,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -43,18 +43,21 @@ public class TomatoScript : Photon.MonoBehaviour
     {
         if (pickTicker >= 20 && !isPicked)
         {
+          var inv =  other.GetComponent<PlayerInventory>();
+            inv.tomatoCount++;
             isPicked = true;
         }
         if (other.CompareTag("Player"))
-        { // This is our player
-           
+        {
+            // This is our player
+
             if (Input.GetAxisRaw("Horizontal") == buttonFlicker && !isPicked)
             {
-                Debug.Log(pickTicker);
                 pickTicker++;
-                buttonFlicker = buttonFlicker *-1;
+                buttonFlicker = buttonFlicker*-1;
             }
         }
+     
 
     }
 }
