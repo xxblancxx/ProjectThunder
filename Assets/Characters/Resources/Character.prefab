@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.23824596, y: -.109078228, z: 0}
+  m_LocalPosition: {x: -.954188585, y: 11.1623039, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 417756}
@@ -160,18 +160,18 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .204999998, y: .174999997}
-      - {x: .125, y: .215000004}
-      - {x: -.075000003, y: .215000004}
-      - {x: -.135000005, y: .204999998}
-      - {x: -.224999994, y: .125}
-      - {x: -.224999994, y: -.104999997}
-      - {x: -.194999993, y: -.165000007}
-      - {x: .00499999989, y: -.204999998}
-      - {x: .165000007, y: -.204999998}
-      - {x: .204999998, y: -.144999996}
-      - {x: .224999994, y: -.0549999997}
-      - {x: .224999994, y: .155000001}
+    - - {x: .0750218034, y: .0276918411}
+      - {x: .0296826363, y: .0373630524}
+      - {x: -.00567835569, y: .0416955948}
+      - {x: -.0396826267, y: .0186986923}
+      - {x: -.0950217247, y: .0166854858}
+      - {x: -.0950218439, y: -.0746717453}
+      - {x: -.0736868382, y: -.160666466}
+      - {x: .0136651993, y: -.166007042}
+      - {x: .0870130658, y: -.153008461}
+      - {x: .10968256, y: -.123337746}
+      - {x: .103686988, y: -.0290050507}
+      - {x: .103686929, y: .0293540955}
 --- !u!81 &8159188
 AudioListener:
   m_ObjectHideFlags: 1
@@ -290,6 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tomatoImage: {fileID: 2800000, guid: d4f5e31ebbc9b1d4d8a98ec0a2c81edf, type: 3}
   tomatoCount: 0
+  currentQuest: 
 --- !u!114 &11497850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,6 +367,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
