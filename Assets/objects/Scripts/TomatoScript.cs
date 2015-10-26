@@ -41,23 +41,24 @@ public class TomatoScript : Photon.MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (pickTicker >= 20 && !isPicked)
+        if (other.gameObject.GetComponent<PlayerInventory>().currentQuest == "Picking Tomatoes")
         {
-          var inv =  other.GetComponent<PlayerInventory>();
-            inv.tomatoCount++;
-            isPicked = true;
-        }
-        if (other.CompareTag("Player"))
-        {
-            // This is our player
-
-            if (Input.GetAxisRaw("Horizontal") == buttonFlicker && !isPicked)
+            if (pickTicker >= 20 && !isPicked)
             {
-                pickTicker++;
-                buttonFlicker = buttonFlicker*-1;
+                var inv = other.GetComponent<PlayerInventory>();
+                inv.tomatoCount++;
+                isPicked = true;
+            }
+            if (other.CompareTag("Player"))
+            {
+                // This is our player
+
+                if (Input.GetAxisRaw("Horizontal") == buttonFlicker && !isPicked)
+                {
+                    pickTicker++;
+                    buttonFlicker = buttonFlicker * -1;
+                }
             }
         }
-     
-
     }
 }

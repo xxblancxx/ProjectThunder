@@ -24,7 +24,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnGUI()
     {
-        CheckIfHUDVisible();
+       CheckIfHUDVisible();
     }
 
 

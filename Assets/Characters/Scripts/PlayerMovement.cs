@@ -9,8 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private float runSpeed;
     public float increasedSpeed;
     public float walkSpeed;
+   
 
-    
+
     // Use this for initialization
     void Start()
     {
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         movement_vector = new Vector2(0, 0);
         RunOrWalk();
         GetDirection();
@@ -35,12 +37,12 @@ public class PlayerMovement : MonoBehaviour
         else { anim.SetBool("isWalking", false); }
 
         rb.MovePosition(rb.position + (movement_vector * runSpeed) * Time.deltaTime);
-       
+
     }
 
     public void RunOrWalk()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetButton("Triggers"))
         {
             runSpeed = increasedSpeed;
             anim.speed = increasedSpeed;
@@ -68,7 +70,8 @@ public class PlayerMovement : MonoBehaviour
             movement_vector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
         }
 
-
     }
+
+   
 
 }

@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Characters\Scripts\KeepAliveScript.cs" />
      <Compile Include="Assets\Characters\Scripts\NPCDialogScript.cs" />
+     <Compile Include="Assets\Characters\Scripts\NetworkPlayerMovement.cs" />
      <Compile Include="Assets\Characters\Scripts\PlayerInventory.cs" />
      <Compile Include="Assets\Characters\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\General Scripts\CameraScript.cs" />

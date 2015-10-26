@@ -164,6 +164,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
   m_IsPrefabParent: 0
@@ -254,6 +262,14 @@ Prefab:
     - target: {fileID: 150774, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
       propertyPath: m_Name
       value: TomatoPlant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
@@ -351,6 +367,14 @@ Prefab:
       propertyPath: m_Name
       value: TomatoPlant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
   m_IsPrefabParent: 0
@@ -425,6 +449,14 @@ Prefab:
     - target: {fileID: 150774, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
       propertyPath: m_Name
       value: TomatoPlant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
@@ -513,6 +545,14 @@ Prefab:
       propertyPath: m_Name
       value: TomatoPlant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
   m_IsPrefabParent: 0
@@ -557,6 +597,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 413180, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
       propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -667,6 +715,15 @@ MonoBehaviour:
   xSize: 100
   ySize: 100
   xPos: 100
+  dialogSentences:
+  - Good Morning son!
+  - Hope you slept well..
+  - Because work is calling!
+  - Go Pick all the Tomatoes in the Yard, would ya?
+  - Remember; To pick a tomato, move left and right!
+  npcQuest: Picking Tomatoes
+  alreadyOnQuestDialog:
+  - Still waiting on those tomatoes son!
 --- !u!1 &1273938466
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +820,14 @@ Prefab:
     - target: {fileID: 150774, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
       propertyPath: m_Name
       value: TomatoPlant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
@@ -2664,6 +2729,14 @@ Prefab:
     - target: {fileID: 150774, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
       propertyPath: m_Name
       value: TomatoPlant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468596, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}
+      propertyPath: instantiationId
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b593ded3c8ca42646ad8e2f871d23a9e, type: 2}

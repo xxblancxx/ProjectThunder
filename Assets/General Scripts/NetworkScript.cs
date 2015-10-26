@@ -27,21 +27,25 @@ public class NetworkScript : MonoBehaviour
         if (!gameStarted)
         {
             GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
-           
+
         }
         if (gameStarted)
         {
             // Make a background box
-            GUILayout.BeginArea(new Rect((Screen.width - 200) / 2, (Screen.height)-200 / 2, 200, 150));
-            GUILayout.TextArea("Go Into the House!");
+            GUILayout.BeginArea(new Rect((Screen.width - 200) / 2, (Screen.height) - 200 / 2, 200, 150));
+            GUILayout.TextArea("Go See Dad Inside The House!");
             // Make the first button. 
             if (GUILayout.Button("OK!"))
             {
                 gameStarted = false;
             }
+            else if (Input.GetButton("Fire1"))
+            {
+                gameStarted = false;
+            }
             GUILayout.EndArea();
         }
-        
+
     }
     void DoMyWindow(int windowID)
     {
@@ -71,7 +75,7 @@ public class NetworkScript : MonoBehaviour
         SpawnMyPlayer();
         gameStarted = true;
     }
-   
+
     private void SpawnMyPlayer()
     {
         myPlayer = PhotonNetwork.Instantiate("Character", spawnPosition, Quaternion.identity, 0);
@@ -80,5 +84,10 @@ public class NetworkScript : MonoBehaviour
         myPlayer.GetComponentInChildren<Camera>().enabled = true;
         myPlayer.gameObject.transform.FindChild("Player").tag = "Player";
 
+    }
+
+    void OnPhotonPlayerDisconnected(PhotonPlayer other)
+    { // When character closes game - doesn't leave dead character in there.
+        PhotonNetwork.DestroyPlayerObjects(other);
     }
 }

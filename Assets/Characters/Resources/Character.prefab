@@ -32,6 +32,7 @@ GameObject:
   - 60: {fileID: 6007958}
   - 114: {fileID: 11455988}
   - 114: {fileID: 11490740}
+  - 114: {fileID: 11479590}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -160,18 +161,18 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .0750218034, y: .0276918411}
+    - - {x: .0536683798, y: .018201828}
       - {x: .0296826363, y: .0373630524}
-      - {x: -.00567835569, y: .0416955948}
-      - {x: -.0396826267, y: .0186986923}
-      - {x: -.0950217247, y: .0166854858}
-      - {x: -.0950218439, y: -.0746717453}
-      - {x: -.0736868382, y: -.160666466}
+      - {x: .00618463755, y: .0440683365}
+      - {x: -.0420552492, y: -.0026550293}
+      - {x: -.0451970696, y: -.00229644775}
+      - {x: -.0712959766, y: -.0770435333}
+      - {x: -.0641963482, y: -.158293724}
       - {x: .0136651993, y: -.166007042}
-      - {x: .0870130658, y: -.153008461}
-      - {x: .10968256, y: -.123337746}
-      - {x: .103686988, y: -.0290050507}
-      - {x: .103686929, y: .0293540955}
+      - {x: .0632870793, y: -.153008461}
+      - {x: .0812113285, y: -.120965004}
+      - {x: .068097949, y: -.026632309}
+      - {x: .0514897108, y: .0103721619}
 --- !u!81 &8159188
 AudioListener:
   m_ObjectHideFlags: 1
@@ -261,7 +262,7 @@ MonoBehaviour:
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 414824}
+  - {fileID: 11479590}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -277,6 +278,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab037de1b1e3844a53647e6f182ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11479590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847eb2ab7c94396499d08b5fed7917fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lerpSpeed: 13
 --- !u!114 &11490740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -371,6 +384,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lerpSpeed
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
