@@ -179,6 +179,23 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 464492, guid: 946e2b1fa3dc06a48b1cc9f3ddcda262, type: 2}
   m_PrefabInternal: {fileID: 1549098640}
+--- !u!1 &211626441 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116754, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+  m_PrefabInternal: {fileID: 269262750}
+--- !u!61 &211626443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 211626441}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0599999987, y: -4.63999987}
+  serializedVersion: 2
+  m_Size: {x: .310000002, y: 3.0999999}
 --- !u!1 &229591636
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +337,38 @@ Prefab:
     - target: {fileID: 2307852, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308682, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392744, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306514, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322952, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_SortingOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392744, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_SortingOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308682, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337084, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322952, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
