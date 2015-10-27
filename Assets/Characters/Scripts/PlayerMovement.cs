@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private float runSpeed;
     public float increasedSpeed;
     public float walkSpeed;
-   
+
 
 
     // Use this for initialization
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+
         movement_vector = new Vector2(0, 0);
         RunOrWalk();
         GetDirection();
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void RunOrWalk()
     {
-        if (Input.GetButton("Triggers"))
+        if (Input.GetButton("Triggers") || Input.GetAxisRaw("Triggers")<0)
         {
             runSpeed = increasedSpeed;
             anim.speed = increasedSpeed;
@@ -61,17 +61,25 @@ public class PlayerMovement : MonoBehaviour
         // Checks for horizontal input first, so player can only move left or right
         // No diagonal movement.
         // Check for up or down
-        if (Input.GetAxisRaw("Vertical") > 0 || Input.GetAxisRaw("Vertical") < 0)
+        if (Input.GetAxisRaw("Vertical") < 0)
         {
-            movement_vector = new Vector2(0, Input.GetAxisRaw("Vertical"));
-        }
-        if (Input.GetAxisRaw("Horizontal") > 0 || Input.GetAxisRaw("Horizontal") < 0)
-        { // check for left or right
-            movement_vector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+            movement_vector = new Vector2(0, -1);
         }
 
+        if (Input.GetAxisRaw("Vertical") > 0)
+        {
+            movement_vector = new Vector2(0, 1);
+        }
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        { // check for left or right
+            movement_vector = new Vector2(-1, 0);
+        }
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        { // check for left or right
+            movement_vector = new Vector2(1, 0);
+        }
     }
 
-   
+
 
 }

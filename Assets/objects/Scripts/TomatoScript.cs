@@ -47,7 +47,12 @@ public class TomatoScript : Photon.MonoBehaviour
             {
                 var inv = other.GetComponent<PlayerInventory>();
                 inv.tomatoCount++;
+                var leavesObj = transform.FindChild("Leaves");
+                var leafAnim = leavesObj.GetComponent<Animator>();
+                Debug.Log(leafAnim.runtimeAnimatorController);
+                leafAnim.SetTrigger("triggerSpray");
                 isPicked = true;
+            
             }
             if (other.CompareTag("Player"))
             {
