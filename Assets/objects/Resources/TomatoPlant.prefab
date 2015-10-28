@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11468596}
   m_Layer: 0
   m_Name: TomatoPlant
-  m_TagString: Untagged
+  m_TagString: TomatoPlant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,6 +269,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f3e89e663d54cc44e9fc1bc3bef4f0a6, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: TomatoPlant
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150774}

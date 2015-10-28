@@ -764,15 +764,18 @@ MonoBehaviour:
   xSize: 100
   ySize: 100
   xPos: 100
-  dialogSentences:
-  - Good Morning son!
-  - Hope you slept well..
-  - Because work is calling!
-  - Go Pick all the Tomatoes in the Yard, would ya?
-  - Remember; To pick a tomato, move left and right!
+  startQuestDialog:
+  - Hi Son
+  - Hope you slept well
+  - Because there's work to do!
+  - Go Pick all the Tomatoes in the Yard, would ya' ?!
+  - To Pick Tomatoes, Move Left And Right Repeatedly
   npcQuest: Picking Tomatoes
   alreadyOnQuestDialog:
   - Still waiting on those tomatoes son!
+  finishQuestDialog:
+  - Thank you For the Help with the tomatoes!
+  - You're my Tomato-Hero!
 --- !u!1 &1273938466
 GameObject:
   m_ObjectHideFlags: 0

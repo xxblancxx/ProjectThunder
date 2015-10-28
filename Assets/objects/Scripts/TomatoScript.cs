@@ -49,7 +49,7 @@ public class TomatoScript : Photon.MonoBehaviour
                 inv.tomatoCount++;
                 var leavesObj = transform.FindChild("Leaves");
                 var leafAnim = leavesObj.GetComponent<Animator>();
-                Debug.Log(leafAnim.runtimeAnimatorController);
+                //Debug.Log(leafAnim.runtimeAnimatorController);
                 leafAnim.SetTrigger("triggerSpray");
                 isPicked = true;
             
