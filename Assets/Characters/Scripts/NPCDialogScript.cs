@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Media;
+//using UnityEditor.Animations;
 
 public class NPCDialogScript : MonoBehaviour
 {
+    public AudioClip SoundClip;
+    private AudioSource soundPlayer;
     private bool talking;
     public int xSize;
     public int ySize;
@@ -18,7 +22,7 @@ public class NPCDialogScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        soundPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -82,12 +86,15 @@ public class NPCDialogScript : MonoBehaviour
                 finishQuest = true;
                 if (!other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))
                 {
+                    ParticleSystem partsys = GetComponent<ParticleSystem>();
+                    soundPlayer.PlayOneShot(SoundClip);
+                    partsys.Play(true);
                     other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Add(npcQuest);
                 }
             }
-            
 
-            if (tomatoList.Count>0 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest && !alreadyOnQuest)
+
+            if (tomatoList.Count > 0 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest && !alreadyOnQuest)
             {
                 talking = false;
                 alreadyOnQuest = true;
