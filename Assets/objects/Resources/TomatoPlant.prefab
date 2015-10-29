@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPicked: 0
+  waitTime: 1200
 --- !u!212 &21207100
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -272,6 +273,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: TomatoPlant
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: waitTime
+      value: 1200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

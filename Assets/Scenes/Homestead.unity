@@ -232,7 +232,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229591636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.59300005, y: 10.0860004, z: 0}
+  m_LocalPosition: {x: -4.59299994, y: 10.0860004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 311450249}
@@ -300,7 +300,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 472936, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.77302933
+      value: -8.77302933
       objectReference: {fileID: 0}
     - target: {fileID: 472936, guid: 8654bc3634ace7a4788bfdfcc85b8263, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2991,7 +2991,7 @@ MonoBehaviour:
   - Hi Son
   - Hope you slept well
   - Because there's work to do!
-  - Go Pick all the Tomatoes in the Yard, would ya' ?!
+  - Go Pick 8 Tomatoes in the Yard, would ya' ?!
   - To Pick Tomatoes, Move Left And Right Repeatedly
   npcQuest: Picking Tomatoes
   alreadyOnQuestDialog:
@@ -5429,8 +5429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToChangeTo: 1
   destination: {fileID: 229591638}
-  maxXPos: -.300000012
-  minXPos: -3.25
+  maxXPos: -3.29999995
+  minXPos: -6.25
   maxYPos: 14
   minYPos: 10.1999998
 --- !u!1 &1536439266
@@ -7194,7 +7194,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646233241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.60800004, y: 9.5710001, z: 0}
+  m_LocalPosition: {x: -4.6079998, y: 9.5710001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951737704}
@@ -7345,7 +7345,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1795753659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.13100004, y: .467000008, z: 0}
+  m_LocalPosition: {x: -4.13100004, y: .600000024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 311450249}

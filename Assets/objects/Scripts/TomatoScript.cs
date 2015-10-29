@@ -7,6 +7,8 @@ public class TomatoScript : Photon.MonoBehaviour
     private Animator anim;
     private int pickTicker;
     private int buttonFlicker;
+    public int waitTime;
+    private int currentWaitTime;
     // Use this for initialization
     void Start()
     {
@@ -19,12 +21,23 @@ public class TomatoScript : Photon.MonoBehaviour
     {
         if (isPicked)
         {
-            anim.SetBool("IsPicked", true);
+            if (currentWaitTime == 0)
+            {
+                isPicked = false;
+                pickTicker = 0;
+            }
+            else
+            {
+               anim.SetBool("IsPicked", true);
+                currentWaitTime--;
+            }
+            
         }
         else
         {
             anim.SetBool("IsPicked", false);
         }
+
     }
 
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -52,7 +65,8 @@ public class TomatoScript : Photon.MonoBehaviour
                 //Debug.Log(leafAnim.runtimeAnimatorController);
                 leafAnim.SetTrigger("triggerSpray");
                 isPicked = true;
-            
+                currentWaitTime = waitTime;
+
             }
             if (other.CompareTag("Player"))
             {

@@ -63,16 +63,7 @@ public class NPCDialogScript : MonoBehaviour
 
         if (other.CompareTag("Player") && Input.GetButtonDown("Fire1"))
         {
-            var tomatoList = new List<GameObject>();
-            var allTomatoList = GameObject.FindGameObjectsWithTag("TomatoPlant");
-            foreach (var t in allTomatoList)
-            {
-                if (!t.GetComponent<TomatoScript>().isPicked)
-                {
-                    tomatoList.Add(t);
-                }
-            }
-            if (finishQuest)
+          if (finishQuest)
             {
                 if (sentenceNumber >= finishQuestDialog.Length - 1)
                 {
@@ -81,7 +72,7 @@ public class NPCDialogScript : MonoBehaviour
                 }
                 else sentenceNumber++;
             }
-            else if (tomatoList.Count == 0 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest)
+            else if ((other.gameObject.GetComponent<PlayerInventory>().tomatoCount >= 8 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest) ||  other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))
             {
                 finishQuest = true;
                 if (!other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))
@@ -89,12 +80,14 @@ public class NPCDialogScript : MonoBehaviour
                     ParticleSystem partsys = GetComponent<ParticleSystem>();
                     soundPlayer.PlayOneShot(SoundClip);
                     partsys.Play(true);
+                    other.gameObject.GetComponent<PlayerInventory>().tomatoCount = 0;
                     other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Add(npcQuest);
+                    other.gameObject.GetComponent<PlayerInventory>().currentQuest = "";
                 }
             }
 
 
-            if (tomatoList.Count > 0 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest && !alreadyOnQuest)
+            if (other.gameObject.GetComponent<PlayerInventory>().tomatoCount < 8 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest && !alreadyOnQuest)
             {
                 talking = false;
                 alreadyOnQuest = true;

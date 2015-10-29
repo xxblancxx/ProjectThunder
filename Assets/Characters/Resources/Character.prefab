@@ -179,7 +179,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182742}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &9256950
 Behaviour:
   m_ObjectHideFlags: 1
@@ -304,6 +304,7 @@ MonoBehaviour:
   tomatoImage: {fileID: 2800000, guid: d4f5e31ebbc9b1d4d8a98ec0a2c81edf, type: 3}
   tomatoCount: 0
   currentQuest: 
+  finishedQuestList: []
 --- !u!114 &11497850
 MonoBehaviour:
   m_ObjectHideFlags: 1
