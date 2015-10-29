@@ -83,6 +83,7 @@ public class NetworkScript : MonoBehaviour
         myPlayer.GetComponentInChildren<CameraScript>().enabled = true;
         myPlayer.GetComponentInChildren<Camera>().enabled = true;
         myPlayer.GetComponentInChildren<PolygonCollider2D>().enabled = true;
+        myPlayer.GetComponentInChildren<AudioListener>().enabled = true;
         myPlayer.gameObject.transform.FindChild("Player").tag = "Player";
 
     }

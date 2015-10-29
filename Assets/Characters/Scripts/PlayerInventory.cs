@@ -9,11 +9,12 @@ public class PlayerInventory : MonoBehaviour
     public Texture tomatoImage;
     public int tomatoCount;
     public string currentQuest;
+    public List<string> finishedQuestList; 
 
     // Use this for initialization
     void Start()
     {
-
+        finishedQuestList = new List<string>();
     }
 
     // Update is called once per frame

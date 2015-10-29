@@ -24,7 +24,7 @@ public class DoorScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         other.transform.position = destination.position;
         // Boundary Control Objects.
 
