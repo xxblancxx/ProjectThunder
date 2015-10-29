@@ -37,7 +37,8 @@ public class NPCDialogScript : MonoBehaviour
         {
             GUIStyle centerstyle = new GUIStyle();
             centerstyle.alignment = TextAnchor.UpperCenter;
-            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 120) / 2, Screen.height - 50), new Vector2(120, 200)), centerstyle);
+            centerstyle.fontSize = 30;
+            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 360) / 2, Screen.height - 200), new Vector2(360, 200)), centerstyle);
             GUILayout.TextArea(startQuestDialog[sentenceNumber]);
             GUILayout.EndArea();
         }
@@ -45,7 +46,8 @@ public class NPCDialogScript : MonoBehaviour
         {
             GUIStyle centerstyle = new GUIStyle();
             centerstyle.alignment = TextAnchor.UpperCenter;
-            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 120) / 2, Screen.height - 50), new Vector2(120, 200)), centerstyle);
+            centerstyle.fontSize = 30;
+            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 360) / 2, Screen.height - 200), new Vector2(360, 200)), centerstyle);
             GUILayout.TextArea(finishQuestDialog[sentenceNumber]);
             GUILayout.EndArea();
         }
@@ -53,8 +55,9 @@ public class NPCDialogScript : MonoBehaviour
         {
             GUIStyle centerstyle = new GUIStyle();
             centerstyle.alignment = TextAnchor.UpperCenter;
-            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 120) / 2, Screen.height - 50), new Vector2(120, 200)), centerstyle);
-            GUILayout.TextArea(alreadyOnQuestDialog[sentenceNumber]);
+            centerstyle.fontSize = 30;
+            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 360) / 2, Screen.height - 200), new Vector2(360, 200)), centerstyle);
+           GUILayout.TextArea(alreadyOnQuestDialog[sentenceNumber]);
             GUILayout.EndArea();
         }
     }
