@@ -7,6 +7,7 @@ using System.Media;
 public class NPCDialogScript : MonoBehaviour
 {
     public AudioClip SoundClip;
+    public AudioClip talkSound;
     private AudioSource soundPlayer;
     private bool talking;
     public int xSize;
@@ -60,6 +61,7 @@ public class NPCDialogScript : MonoBehaviour
 
         if (other.CompareTag("Player") && Input.GetButtonDown("Fire1"))
         {
+            soundPlayer.PlayOneShot(talkSound);
             if (finishQuest)
             {
                 if (sentenceNumber >= finishQuestDialog.Length - 1)
@@ -67,7 +69,10 @@ public class NPCDialogScript : MonoBehaviour
                     finishQuest = false;
                     sentenceNumber = 0;
                 }
-                else sentenceNumber++;
+                else
+                {
+                    sentenceNumber++;
+                }
             }
             else if ((other.gameObject.GetComponent<PlayerInventory>().tomatoCount >= 8 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest) || other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))
             {

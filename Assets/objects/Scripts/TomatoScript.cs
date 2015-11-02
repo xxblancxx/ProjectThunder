@@ -9,11 +9,13 @@ public class TomatoScript : Photon.MonoBehaviour
     private int buttonFlicker;
     public int waitTime;
     private int currentWaitTime;
+    private AudioSource sound;
     // Use this for initialization
     void Start()
     {
         buttonFlicker = 1;
         anim = GetComponent<Animator>();
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -65,6 +67,7 @@ public class TomatoScript : Photon.MonoBehaviour
                 //Debug.Log(leafAnim.runtimeAnimatorController);
                 leafAnim.SetTrigger("triggerSpray");
                 isPicked = true;
+                sound.Play();
                 currentWaitTime = waitTime;
 
             }

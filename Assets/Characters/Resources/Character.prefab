@@ -266,7 +266,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.39999998
+  orthographic size: 1.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -576,8 +576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxXPos: 1.74000001
   minXPos: -5.19999981
-  maxYPos: 3.70000005
-  minYPos: -3
+  maxYPos: 3.5
+  minYPos: -2.79999995
   panSpeed: .200000003
   cameraTarget: {fileID: 414824}
 --- !u!124 &12421022
@@ -728,7 +728,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: minXPos
-      value: -4.9000001
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: maxXPos
@@ -741,6 +741,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_NormalizedViewPortRect.width
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: orthographic size
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxYPos
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: minYPos
+      value: -2.79999995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
