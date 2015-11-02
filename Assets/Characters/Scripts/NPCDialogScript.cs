@@ -19,54 +19,48 @@ public class NPCDialogScript : MonoBehaviour
     private bool alreadyOnQuest;
     public string[] finishQuestDialog;
     private bool finishQuest;
+    private GameObject SpeechBubble;
+    private TextMesh Speech;
     // Use this for initialization
     void Start()
     {
         soundPlayer = GetComponent<AudioSource>();
+        SpeechBubble = transform.FindChild("SpeechBubble").gameObject;
+        Speech = SpeechBubble.transform.FindChild("Speech").transform.GetComponent<TextMesh>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    void OnGUI()
-    {
+       
         if (talking)
         {
-            GUIStyle centerstyle = new GUIStyle();
-            centerstyle.alignment = TextAnchor.UpperCenter;
-            centerstyle.fontSize = 30;
-            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 360) / 2, Screen.height - 200), new Vector2(360, 200)), centerstyle);
-            GUILayout.TextArea(startQuestDialog[sentenceNumber]);
-            GUILayout.EndArea();
+            SpeechBubble.SetActive(true);
+            Speech.text = TextWrappingHandler.SplitByNewline(startQuestDialog[sentenceNumber]);
         }
         if (finishQuest)
         {
-            GUIStyle centerstyle = new GUIStyle();
-            centerstyle.alignment = TextAnchor.UpperCenter;
-            centerstyle.fontSize = 30;
-            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 360) / 2, Screen.height - 200), new Vector2(360, 200)), centerstyle);
-            GUILayout.TextArea(finishQuestDialog[sentenceNumber]);
-            GUILayout.EndArea();
-        }
+            SpeechBubble.SetActive(true);
+            Speech.text = TextWrappingHandler.SplitByNewline(finishQuestDialog[sentenceNumber]);
+       }
         if (alreadyOnQuest)
         {
-            GUIStyle centerstyle = new GUIStyle();
-            centerstyle.alignment = TextAnchor.UpperCenter;
-            centerstyle.fontSize = 30;
-            GUILayout.BeginArea(new Rect(new Vector2((Screen.width - 360) / 2, Screen.height - 200), new Vector2(360, 200)), centerstyle);
-           GUILayout.TextArea(alreadyOnQuestDialog[sentenceNumber]);
-            GUILayout.EndArea();
+            SpeechBubble.SetActive(true);
+            Speech.text = TextWrappingHandler.SplitByNewline(alreadyOnQuestDialog[sentenceNumber]);
+        }
+        else if (!talking && !finishQuest && !alreadyOnQuest)
+        {
+            SpeechBubble.SetActive(false);
         }
     }
+
+
     void OnTriggerStay2D(Collider2D other)
     {
 
         if (other.CompareTag("Player") && Input.GetButtonDown("Fire1"))
         {
-          if (finishQuest)
+            if (finishQuest)
             {
                 if (sentenceNumber >= finishQuestDialog.Length - 1)
                 {
@@ -75,7 +69,7 @@ public class NPCDialogScript : MonoBehaviour
                 }
                 else sentenceNumber++;
             }
-            else if ((other.gameObject.GetComponent<PlayerInventory>().tomatoCount >= 8 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest) ||  other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))
+            else if ((other.gameObject.GetComponent<PlayerInventory>().tomatoCount >= 8 && other.gameObject.GetComponent<PlayerInventory>().currentQuest == npcQuest) || other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))
             {
                 finishQuest = true;
                 if (!other.gameObject.GetComponent<PlayerInventory>().finishedQuestList.Contains(npcQuest))

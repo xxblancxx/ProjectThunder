@@ -8,12 +8,13 @@ public class NetworkScript : MonoBehaviour
     public Vector2 spawnPosition;
     private RoomOptions newRoomOptions;
     private bool gameStarted;
-
+ 
     private GameObject myPlayer;
     // Use this for initialization
     void Start()
     {
         Connect();
+       
     }
 
     void Connect()
@@ -29,23 +30,6 @@ public class NetworkScript : MonoBehaviour
             GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
 
         }
-        if (gameStarted)
-        {
-            // Make a background box
-            GUILayout.BeginArea(new Rect((Screen.width - 200) / 2, (Screen.height) - 200 / 2, 200, 150));
-            GUILayout.TextArea("Go See Dad Inside The House!");
-            // Make the first button. 
-            if (GUILayout.Button("OK!"))
-            {
-                gameStarted = false;
-            }
-            else if (Input.GetButton("Fire1"))
-            {
-                gameStarted = false;
-            }
-            GUILayout.EndArea();
-        }
-
     }
     void DoMyWindow(int windowID)
     {

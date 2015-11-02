@@ -9,20 +9,32 @@ public class PlayerMovement : MonoBehaviour
     private float runSpeed;
     public float increasedSpeed;
     public float walkSpeed;
-
-
-
+    private GameObject SpeechBubble;
+    private TextMesh Speech;
+    public bool showMessage;
+  
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         movement_vector = new Vector2();
+        SpeechBubble = transform.FindChild("SpeechBubble").gameObject;
+        Speech = SpeechBubble.transform.FindChild("Speech").transform.GetComponent<TextMesh>();
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+       
+
+        if (!showMessage && SpeechBubble != null)
+        {
+            SpeechBubble.SetActive(false);
+        }
+       
 
         movement_vector = new Vector2(0, 0);
         RunOrWalk();
@@ -40,9 +52,17 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    private void DisplayLookedAtItem(string message)
+    {
+        if (showMessage)
+        {
+            SpeechBubble.SetActive(true);
+            Speech.text = TextWrappingHandler.SplitByNewline(message);
+        }
+    }
     public void RunOrWalk()
     {
-        if (Input.GetButton("Triggers") || Input.GetAxisRaw("Triggers")<0)
+        if (Input.GetButton("Triggers") || Input.GetAxisRaw("Triggers") < 0)
         {
             runSpeed = increasedSpeed;
             anim.speed = increasedSpeed;
@@ -80,6 +100,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Object") && Input.GetButtonDown("Fire1"))
+        {
+            if (showMessage)
+            {
+                showMessage = false;
+            }
+            else if (!showMessage)
+            {
+                showMessage = true;
+                DisplayLookedAtItem(other.GetComponent<lookAtItemScript>().message);
+            }
+        }
+    }
 
 }

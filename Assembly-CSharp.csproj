@@ -50,6 +50,8 @@
      <Compile Include="Assets\Characters\Scripts\NetworkPlayerMovement.cs" />
      <Compile Include="Assets\Characters\Scripts\PlayerInventory.cs" />
      <Compile Include="Assets\Characters\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Characters\Scripts\ShowTutorial.cs" />
+     <Compile Include="Assets\Characters\Scripts\TextWrappingHandler.cs" />
      <Compile Include="Assets\General Scripts\CameraScript.cs" />
      <Compile Include="Assets\General Scripts\DoorScript.cs" />
      <Compile Include="Assets\General Scripts\NetworkScript.cs" />

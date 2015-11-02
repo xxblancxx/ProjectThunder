@@ -17,8 +17,10 @@ namespace Assets
         // Use this for initialization
         void Start()
         {
-            // not used yet, but can change cam properties with code.
+            // Can change cam properties with code.
             cam = GetComponent<Camera>();
+
+
         }
 
         // Update is called once per frame
@@ -28,6 +30,7 @@ namespace Assets
                 Mathf.Lerp(transform.position.x, Mathf.Clamp(cameraTarget.position.x, minXPos, maxXPos), panSpeed),
                 Mathf.Lerp(transform.position.y, Mathf.Clamp(cameraTarget.position.y, minYPos, maxYPos), panSpeed),
                 -10);
+
         }
 
     }
