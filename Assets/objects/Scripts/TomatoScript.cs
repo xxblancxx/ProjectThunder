@@ -47,7 +47,7 @@ public class TomatoScript : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PlayerInventory>().currentQuest == "Picking Tomatoes")
         {
-            if (pickTicker >= 14 && !isPicked)
+            if (pickTicker >= 12 && !isPicked)
             {
                 var inv = other.GetComponent<PlayerInventory>();
                 inv.tomatoCount++;
