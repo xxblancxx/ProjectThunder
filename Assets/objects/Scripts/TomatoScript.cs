@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TomatoScript : Photon.MonoBehaviour
+public class TomatoScript : MonoBehaviour
 {
     public bool isPicked = false;
     private Animator anim;
@@ -42,23 +42,12 @@ public class TomatoScript : Photon.MonoBehaviour
 
     }
 
-    void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.isWriting)
-        {
-            stream.SendNext(isPicked);
-        }
-        if (stream.isReading)
-        {
-            isPicked = (bool)stream.ReceiveNext();
-        }
-    }
-
+ 
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.GetComponent<PlayerInventory>().currentQuest == "Picking Tomatoes")
         {
-            if (pickTicker >= 20 && !isPicked)
+            if (pickTicker >= 14 && !isPicked)
             {
                 var inv = other.GetComponent<PlayerInventory>();
                 inv.tomatoCount++;
