@@ -6574,6 +6574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToChangeTo: 1
   destination: {fileID: 229591638}
+  desiredMusic: {fileID: 8300000, guid: 88702cf340814e84091fa66c8c10d148, type: 3}
   maxXPos: -3.20000005
   minXPos: -5.5
   maxYPos: 9.60000038
@@ -8549,6 +8550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToChangeTo: 0
   destination: {fileID: 1795753660}
+  desiredMusic: {fileID: 8300000, guid: beaa09990ce9c30469c5bb2700420896, type: 3}
   maxXPos: 1.74000001
   minXPos: -5.19999981
   maxYPos: 3.5
