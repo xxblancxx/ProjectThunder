@@ -3000,8 +3000,9 @@ MonoBehaviour:
   alreadyOnQuestDialog:
   - Still waiting on NEWLINE those tomatoes son!
   finishQuestDialog:
-  - Thank you For NEWLINE the Help with NEWLINE the tomatoes!
-  - You're my NEWLINE Tomato-Hero!
+  - Thank's Son
+  - You should go deliver NEWLINE these tomatoes to NEWLINE grandma
+  - She lives beyond NEWLINE the forest to the east
 --- !u!61 &294958926
 BoxCollider2D:
   m_ObjectHideFlags: 0
