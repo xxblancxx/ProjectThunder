@@ -7,3 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Homestead.unity
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
@@ -12,7 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private GameObject SpeechBubble;
     private TextMesh Speech;
     public bool showMessage;
-  
+ 
+
     // Use this for initialization
     void Start()
     {
@@ -21,20 +23,20 @@ public class PlayerMovement : MonoBehaviour
         movement_vector = new Vector2();
         SpeechBubble = transform.FindChild("SpeechBubble").gameObject;
         Speech = SpeechBubble.transform.FindChild("Speech").transform.GetComponent<TextMesh>();
-        
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+
 
         if (!showMessage && SpeechBubble != null)
         {
             SpeechBubble.SetActive(false);
         }
-       
+
 
         movement_vector = new Vector2(0, 0);
         RunOrWalk();
@@ -49,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         else { anim.SetBool("isWalking", false); }
 
         rb.MovePosition(rb.position + (movement_vector * runSpeed) * Time.deltaTime);
+       
 
     }
 

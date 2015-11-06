@@ -113,7 +113,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411372}
-  - 114: {fileID: 11498200}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -532,6 +531,7 @@ MonoBehaviour:
   increasedSpeed: 2
   walkSpeed: .75
   showMessage: 0
+  bgScrollSpeed: 0
 --- !u!114 &11428254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -575,17 +575,6 @@ MonoBehaviour:
   minYPos: -2.79999995
   panSpeed: .200000003
   cameraTarget: {fileID: 443662}
---- !u!114 &11498200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ab037de1b1e3844a53647e6f182ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!124 &12494804
 Behaviour:
   m_ObjectHideFlags: 1
