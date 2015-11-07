@@ -3177,6 +3177,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8252876, guid: ec18e45ec5a531d4bb9954576a2744da, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 10cd3d6055950894c9a8ccf9dd1bb2ef, type: 3}
+    - target: {fileID: 8252876, guid: ec18e45ec5a531d4bb9954576a2744da, type: 2}
+      propertyPath: m_Volume
+      value: .349999994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec18e45ec5a531d4bb9954576a2744da, type: 2}
   m_IsPrefabParent: 0
@@ -6668,7 +6676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToChangeTo: 1
   destination: {fileID: 229591638}
-  desiredMusic: {fileID: 8300000, guid: 88702cf340814e84091fa66c8c10d148, type: 3}
+  desiredMusic: {fileID: 8300000, guid: 8587f24a763ce4b4aafe3b660a8e2455, type: 3}
   maxXPos: -3.20000005
   minXPos: -5.5
   maxYPos: 9.60000038
@@ -8644,7 +8652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToChangeTo: 0
   destination: {fileID: 1795753660}
-  desiredMusic: {fileID: 8300000, guid: beaa09990ce9c30469c5bb2700420896, type: 3}
+  desiredMusic: {fileID: 8300000, guid: 10cd3d6055950894c9a8ccf9dd1bb2ef, type: 3}
   maxXPos: 1.74000001
   minXPos: -5.19999981
   maxYPos: 3.5
