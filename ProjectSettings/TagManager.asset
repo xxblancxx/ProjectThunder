@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TomatoPlant
   - SlowMovingBG
+  - Ground
   layers:
   - Default
   - TransparentFX

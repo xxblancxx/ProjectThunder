@@ -11,6 +11,7 @@ public class ForestPlayerMovement : MonoBehaviour
     public float increasedSpeed;
     public float walkSpeed;
     public float jumpSpeed;
+    private bool grounded;
     //private GameObject SpeechBubble;
     //private TextMesh Speech;
     //public bool showMessage;
@@ -32,10 +33,10 @@ public class ForestPlayerMovement : MonoBehaviour
     void Update()
     {
 
-        //if (!showMessage && SpeechBubble != null)
-        //{
-        //    SpeechBubble.SetActive(false);
-        //}
+        if (Input.GetButtonDown("Jump") && grounded)
+        {
+            Jump();
+        }
 
         movement_vector = new Vector2(0, 0);
         RunOrWalk();
@@ -62,9 +63,6 @@ public class ForestPlayerMovement : MonoBehaviour
             // do nothing. but handle.
         }
 
-        if (Input.GetButton("Jump"))
-            Jump();
-        Debug.Log("Hit");
 
     }
 
@@ -85,22 +83,34 @@ public class ForestPlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        anim.SetFloat("Horizontal", 1);
-        rb.AddForce(Vector2.up * jumpSpeed);
-
-        Debug.Log("Hit");
-
+        anim.SetFloat("input_y", -1);
+        rb.AddRelativeForce(Vector2.up * jumpSpeed);
     }
 
     public void GetDirection()
     {
-    if (Input.GetAxisRaw("Horizontal") < 0)
+        if (Input.GetAxisRaw("Horizontal") < 0)
         { // check for left or right
             movement_vector = new Vector2(-1, 0);
         }
         if (Input.GetAxisRaw("Horizontal") > 0)
         { // check for left or right
             movement_vector = new Vector2(1, 0);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Ground"))
+        {
+            grounded = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Ground"))
+        {
+            grounded = false;
         }
     }
 }

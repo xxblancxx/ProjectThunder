@@ -11,14 +11,13 @@ namespace Assets
         public float minYPos;
         public float panSpeed;
         public Transform cameraTarget;
-        private Camera cam;
+
 
 
         // Use this for initialization
         void Start()
         {
-            // Can change cam properties with code.
-            cam = GetComponent<Camera>();
+
 
 
         }
