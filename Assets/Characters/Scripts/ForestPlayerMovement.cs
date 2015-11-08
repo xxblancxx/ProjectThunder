@@ -10,6 +10,7 @@ public class ForestPlayerMovement : MonoBehaviour
     private float runSpeed;
     public float increasedSpeed;
     public float walkSpeed;
+    public float jumpSpeed;
     //private GameObject SpeechBubble;
     //private TextMesh Speech;
     //public bool showMessage;
@@ -61,6 +62,10 @@ public class ForestPlayerMovement : MonoBehaviour
             // do nothing. but handle.
         }
 
+        if (Input.GetButton("Jump"))
+            Jump();
+        Debug.Log("Hit");
+
     }
 
     public void RunOrWalk()
@@ -75,6 +80,15 @@ public class ForestPlayerMovement : MonoBehaviour
             runSpeed = walkSpeed;
             anim.speed = 1;
         }
+
+    }
+
+    public void Jump()
+    {
+        anim.SetFloat("Horizontal", 1);
+        rb.AddForce(Vector2.up * jumpSpeed);
+
+        Debug.Log("Hit");
 
     }
 

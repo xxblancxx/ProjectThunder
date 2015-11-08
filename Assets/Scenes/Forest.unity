@@ -609,6 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   increasedSpeed: 3.79999995
   walkSpeed: 2
+  jumpSpeed: 0
   bgScrollSpeed: .300000012
 --- !u!50 &700783914
 Rigidbody2D:
@@ -1663,7 +1664,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474234, guid: 407bdac452531c248a5d314ac180bf8c, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2356720, guid: 407bdac452531c248a5d314ac180bf8c, type: 2}
       propertyPath: m_SortingOrder
