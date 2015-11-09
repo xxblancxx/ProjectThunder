@@ -14,6 +14,7 @@ public class ForestPlayerMovement : MonoBehaviour
     public float jumpHeight;
     private bool jumping;
     private bool isGrounded;
+    public bool canScroll = true;
 
     //private GameObject SpeechBubble;
     //private TextMesh Speech;
@@ -72,7 +73,7 @@ public class ForestPlayerMovement : MonoBehaviour
 
         try
         {
-            if (movement_vector.y == 0)
+            if (movement_vector.y == 0 && !canScroll)
             {
                 var bg = GameObject.Find("SlowMoveBG").transform;
                 bg.position = ((Vector2)bg.position + (movement_vector * runSpeed * bgScrollSpeed) * Time.deltaTime);
