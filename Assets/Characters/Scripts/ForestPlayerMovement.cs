@@ -1,17 +1,20 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using Assets;
 
 public class ForestPlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    private CharacterController2D rb;
     private Animator anim;
     private Vector2 movement_vector;
     private float runSpeed;
     public float increasedSpeed;
     public float walkSpeed;
-    public float jumpSpeed;
-    private bool grounded;
+    public float jumpHeight;
+    private bool jumping;
+    private bool isGrounded;
+
     //private GameObject SpeechBubble;
     //private TextMesh Speech;
     //public bool showMessage;
@@ -20,7 +23,7 @@ public class ForestPlayerMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<CharacterController2D>();
         anim = GetComponent<Animator>();
         movement_vector = new Vector2();
         //SpeechBubble = transform.FindChild("SpeechBubble").gameObject;
@@ -29,16 +32,29 @@ public class ForestPlayerMovement : MonoBehaviour
 
     }
 
+    void FixedUpdate()
+    {
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            jumping = true;
+            isGrounded = false;
+        }
+        if (isGrounded)
+        {
+            jumping = false;
+        }
+        if (jumping)
+        {
+            rb.move(Vector2.up * jumpHeight * Time.deltaTime);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("Jump") && grounded)
-        {
-            Jump();
-        }
-
+        
         movement_vector = new Vector2(0, 0);
+
         RunOrWalk();
         GetDirection();
 
@@ -46,10 +62,14 @@ public class ForestPlayerMovement : MonoBehaviour
         {
             anim.SetBool("isWalking", true);
             anim.SetFloat("input_x", movement_vector.x);
+            rb.move((movement_vector * runSpeed) * Time.deltaTime);
         }
-        else { anim.SetBool("isWalking", false); }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
 
-        rb.MovePosition(rb.position + (movement_vector * runSpeed) * Time.deltaTime);
+
         try
         {
             if (movement_vector.y == 0)
@@ -62,6 +82,7 @@ public class ForestPlayerMovement : MonoBehaviour
         {
             // do nothing. but handle.
         }
+
 
 
     }
@@ -81,11 +102,7 @@ public class ForestPlayerMovement : MonoBehaviour
 
     }
 
-    public void Jump()
-    {
-        anim.SetFloat("input_y", -1);
-        rb.AddRelativeForce(Vector2.up * jumpSpeed);
-    }
+
 
     public void GetDirection()
     {
@@ -103,14 +120,14 @@ public class ForestPlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            grounded = true;
+            isGrounded = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Ground"))
         {
-            grounded = false;
+            isGrounded = false;
         }
     }
 }
