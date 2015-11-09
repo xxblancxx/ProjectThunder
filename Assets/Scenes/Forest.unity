@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d9180b8a484ef47bbfc6cba2a719d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increasedSpeed: 3.79999995
+  increasedSpeed: 2.29999995
   walkSpeed: 1
   jumpHeight: 2
   bgScrollSpeed: .300000012
@@ -1274,7 +1274,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.5
+  orthographic size: 1.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1396,7 +1396,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1431352361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .579999983, y: -4.8920002, z: 0}
+  m_LocalPosition: {x: .579999983, y: -4.96000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1204307666}

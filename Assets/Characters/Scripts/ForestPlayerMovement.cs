@@ -5,7 +5,7 @@ using Assets;
 
 public class ForestPlayerMovement : MonoBehaviour
 {
-    private CharacterController2D rb;
+    private CharacterController2D myController;
     private Animator anim;
     private Vector2 movement_vector;
     private float runSpeed;
@@ -23,7 +23,7 @@ public class ForestPlayerMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        rb = GetComponent<CharacterController2D>();
+        myController = GetComponent<CharacterController2D>();
         anim = GetComponent<Animator>();
         movement_vector = new Vector2();
         //SpeechBubble = transform.FindChild("SpeechBubble").gameObject;
@@ -46,13 +46,13 @@ public class ForestPlayerMovement : MonoBehaviour
         }
         if (jumping)
         {
-            rb.move(Vector2.up * jumpHeight * Time.deltaTime);
+            myController.move(Vector2.up * jumpHeight * Time.deltaTime);
         }
     }
     // Update is called once per frame
     void Update()
     {
-        
+
         movement_vector = new Vector2(0, 0);
 
         RunOrWalk();
@@ -62,7 +62,7 @@ public class ForestPlayerMovement : MonoBehaviour
         {
             anim.SetBool("isWalking", true);
             anim.SetFloat("input_x", movement_vector.x);
-            rb.move((movement_vector * runSpeed) * Time.deltaTime);
+            myController.move((movement_vector * runSpeed) * Time.deltaTime);
         }
         else
         {

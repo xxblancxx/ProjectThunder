@@ -13,7 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private GameObject SpeechBubble;
     private TextMesh Speech;
     public bool showMessage;
- 
+    private bool tooltipSeen;
+    public GameObject tooltip;
+
 
     // Use this for initialization
     void Start()
@@ -51,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         else { anim.SetBool("isWalking", false); }
 
         rb.MovePosition(rb.position + (movement_vector * runSpeed) * Time.deltaTime);
-       
+
 
     }
 
@@ -117,6 +119,21 @@ public class PlayerMovement : MonoBehaviour
                 DisplayLookedAtItem(other.GetComponent<lookAtItemScript>().message);
             }
         }
+        if (Input.GetButtonDown("Fire1") && tooltipSeen )
+        {
+           tooltip.SetActive(false);
+        }
+        {
+            
+        }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Tooltip") && !tooltipSeen)
+        {
+         tooltip.SetActive(true);
+            tooltipSeen = true;
+        }
+    }
 }
