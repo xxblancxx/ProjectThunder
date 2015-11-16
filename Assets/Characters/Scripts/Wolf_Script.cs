@@ -23,16 +23,20 @@ public class Wolf_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (walking)
+        if (wolf.activeSelf)
         {
-            anim.SetBool("Walking", true);
-            anim.speed = walkSpeed/2;
-            rb.MovePosition(rb.position + (Vector2.right * walkSpeed) * Time.deltaTime);
+            if (walking)
+            {
+                anim.SetBool("Walking", true);
+                anim.speed = walkSpeed / 2;
+                rb.MovePosition(rb.position + (Vector2.right * walkSpeed) * Time.deltaTime);
+            }
+            else
+            {
+                anim.SetBool("Walking", false);
+            }
         }
-        else
-        {
-            anim.SetBool("Walking", false);
-        }
+
     }
 
 
@@ -46,6 +50,7 @@ public class Wolf_Script : MonoBehaviour
             wolf.SetActive(true);
             walking = true;
             other.GetComponent<ForestPlayerMovement>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }

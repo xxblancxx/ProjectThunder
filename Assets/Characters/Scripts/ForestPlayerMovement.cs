@@ -134,7 +134,11 @@ public class ForestPlayerMovement : MonoBehaviour
 
     void OnDisable()
     {
-        anim.SetBool("isWalking", false);
-        anim.SetFloat("input_x", -1);
+        if (anim != null)
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetFloat("input_x", -1);
+        }
+
     }
 }
