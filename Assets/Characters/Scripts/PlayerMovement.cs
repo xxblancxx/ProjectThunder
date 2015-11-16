@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private TextMesh Speech;
     public bool showMessage;
     private bool tooltipSeen;
+    private bool toolTipShown;
     public GameObject tooltip;
 
 
@@ -119,12 +120,13 @@ public class PlayerMovement : MonoBehaviour
                 DisplayLookedAtItem(other.GetComponent<lookAtItemScript>().message);
             }
         }
-        if (Input.GetButtonDown("Fire1") && tooltipSeen )
+        if (Input.GetButtonDown("Fire1") && toolTipShown)
         {
-           tooltip.SetActive(false);
+            tooltip.SetActive(false);
+            tooltipSeen = true;
         }
         {
-            
+
         }
     }
 
@@ -132,8 +134,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Tooltip") && !tooltipSeen)
         {
-         tooltip.SetActive(true);
-            tooltipSeen = true;
+            tooltip.SetActive(true);
+            toolTipShown = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Tooltip") && !tooltipSeen)
+        {
+            tooltip.SetActive(false);
         }
     }
 }
