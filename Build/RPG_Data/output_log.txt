@@ -15,7 +15,7 @@ Loading C:\Users\martin\Documents\Projects\ProjectThunder\Build\RPG_Data\Managed
 Platform assembly: C:\Users\martin\Documents\Projects\ProjectThunder\Build\RPG_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\martin\Documents\Projects\ProjectThunder\Build\RPG_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\martin\Documents\Projects\ProjectThunder\Build\RPG_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.285 seconds
+- Completed reload, in  0.203 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
@@ -23,4 +23,10 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Initialized touch support.
 Platform assembly: C:\Users\martin\Documents\Projects\ProjectThunder\Build\RPG_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1204 -> priority: 1 
+  Thread -> id: 29b0 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.469594 ms
+
+Unloading 135 unused Assets to reduce memory usage. Loaded Objects now: 530.
+Total: 1.336146 ms (FindLiveObjects: 0.088640 ms CreateObjectMapping: 0.062515 ms MarkObjects: 0.471196 ms  DeleteObjects: 0.712393 ms)
+
