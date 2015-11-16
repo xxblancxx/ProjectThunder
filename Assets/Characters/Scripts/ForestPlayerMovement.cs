@@ -131,4 +131,10 @@ public class ForestPlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
+
+    void OnDisable()
+    {
+        anim.SetBool("isWalking", false);
+        anim.SetFloat("input_x", -1);
+    }
 }

@@ -1029,6 +1029,7 @@ Transform:
   - {fileID: 1160963434}
   - {fileID: 2088946730}
   - {fileID: 759424663}
+  - {fileID: 1122144003}
   m_Father: {fileID: 1512429246}
   m_RootOrder: 3
 --- !u!1 &899044316
@@ -1180,6 +1181,8 @@ GameObject:
   - 212: {fileID: 993715120}
   - 50: {fileID: 993715119}
   - 58: {fileID: 993715121}
+  - 61: {fileID: 993715122}
+  - 114: {fileID: 993715123}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
@@ -1268,9 +1271,33 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.100000001, y: -.109999999}
+  m_Offset: {x: -.159999996, y: -.349999994}
   serializedVersion: 2
-  m_Radius: .720000029
+  m_Radius: .460000008
+--- !u!61 &993715122
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993715116}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -.870000005, y: -.460000008}
+  serializedVersion: 2
+  m_Size: {x: .349999994, y: .200000003}
+--- !u!114 &993715123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993715116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c32add680f2f9a4784c8193b08413d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &995161823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1451,59 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 202
+--- !u!1 &1122144002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1122144003}
+  - 61: {fileID: 1122144004}
+  - 114: {fileID: 1122144005}
+  m_Layer: 0
+  m_Name: DeathCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1122144003
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122144002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.03999996, z: 0}
+  m_LocalScale: {x: 250, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 856130026}
+  m_RootOrder: 9
+--- !u!61 &1122144004
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122144002}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &1122144005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122144002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25cd4a4a6ba93e4fa3db6406e16fd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1160963433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,7 +2511,7 @@ MonoBehaviour:
   walking: 0
   anim: {fileID: 0}
   stopPos: {x: 2, y: 0}
-  walkSpeed: 2
+  walkSpeed: 1
 --- !u!1 &1975009408
 GameObject:
   m_ObjectHideFlags: 0

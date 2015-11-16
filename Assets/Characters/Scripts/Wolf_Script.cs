@@ -26,6 +26,7 @@ public class Wolf_Script : MonoBehaviour
         if (walking)
         {
             anim.SetBool("Walking", true);
+            anim.speed = walkSpeed/2;
             rb.MovePosition(rb.position + (Vector2.right * walkSpeed) * Time.deltaTime);
         }
         else
@@ -44,6 +45,7 @@ public class Wolf_Script : MonoBehaviour
         {
             wolf.SetActive(true);
             walking = true;
+            other.GetComponent<ForestPlayerMovement>().enabled = false;
         }
     }
 }
