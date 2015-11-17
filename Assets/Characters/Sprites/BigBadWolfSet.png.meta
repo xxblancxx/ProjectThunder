@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: c6d2474dc9413dd43bc5efd0b5ded5c7
+timeCreated: 1447674317
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BigBadWolfSet_0
+    21300002: BigBadWolfSet_1
+    21300004: BigBadWolfSet_2
+    21300006: BigBadWolfSet_3
+    21300008: BigBadWolfSet_4
+    21300010: BigBadWolfSet_5
+    21300012: BigBadWolfSet_6
+    21300014: BigBadWolfSet_7
+    21300016: BigBadWolfSet_8
+    21300018: BigBadWolfSet_9
+    21300020: BigBadWolfSet_10
+    21300022: BigBadWolfSet_11
+    21300024: BigBadWolfSet_12
+    21300026: BigBadWolfSet_13
+    21300028: BigBadWolfSet_14
+    21300030: BigBadWolfSet_15
+    21300032: BigBadWolfSet_16
+    21300034: BigBadWolfSet_17
+    21300036: BigBadWolfSet_18
+    21300038: BigBadWolfSet_19
+    21300040: BigBadWolfSet_20
+    21300042: BigBadWolfSet_21
+    21300044: BigBadWolfSet_22
+    21300046: BigBadWolfSet_23
+    21300048: BigBadWolfSet_24
+    21300050: BigBadWolfSet_25
+    21300052: BigBadWolfSet_26
+    21300054: BigBadWolfSet_27
+    21300056: BigBadWolfSet_28
+    21300058: BigBadWolfSet_29
+    21300060: BigBadWolfSet_30
+    21300062: BigBadWolfSet_31
+    21300064: BigBadWolfSet_32
+    21300066: BigBadWolfSet_33
+    21300068: BigBadWolfSet_34
+    21300070: BigBadWolfSet_35
+    21300072: BigBadWolfSet_36
+    21300074: BigBadWolfSet_37
+    21300076: BigBadWolfSet_38
+    21300078: BigBadWolfSet_39
+    21300080: BigBadWolfSet_40
+    21300082: BigBadWolfSet_41
+    21300084: BigBadWolfSet_42
+    21300086: BigBadWolfSet_43
+    21300088: BigBadWolfSet_44
+    21300090: BigBadWolfSet_45
+    21300092: BigBadWolfSet_46
+    21300094: BigBadWolfSet_47
+    21300096: BigBadWolfSet_48
+    21300098: BigBadWolfSet_49
+    21300100: BigBadWolfSet_50
+    21300102: BigBadWolfSet_51
+    21300104: BigBadWolfSet_52
+    21300106: BigBadWolfSet_53
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BigBadWolfSet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1139
+        width: 137
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1139
+        width: 141
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1139
+        width: 141
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 939
+        width: 139
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 939
+        width: 165
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 939
+        width: 157
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_6
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 939
+        width: 162
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 739
+        width: 173
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 816
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 816
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 819
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_11
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 807
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 800
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_13
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 800
+        width: 49
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 800
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_15
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 800
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_16
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 779
+        width: 41
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_18
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_19
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_20
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_21
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 539
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_22
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_23
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_24
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 539
+        width: 157
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 331
+        width: 157
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 331
+        width: 157
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_27
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 331
+        width: 157
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_28
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 331
+        width: 230
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_29
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 331
+        width: 209
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_30
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 359
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_31
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 331
+        width: 231
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_32
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 331
+        width: 288
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_33
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 331
+        width: 257
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_34
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 331
+        width: 200
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_35
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 331
+        width: 184
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_36
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 344
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_37
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 203
+        width: 80
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_38
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 203
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_39
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 203
+        width: 85
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_40
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 203
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_41
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 203
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 27
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_43
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 27
+        width: 151
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_44
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 40
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_45
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 27
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_46
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 27
+        width: 150
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_47
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 27
+        width: 210
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_48
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 27
+        width: 213
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_49
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 45
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_50
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 27
+        width: 212
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_51
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 27
+        width: 201
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_52
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 32
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigBadWolfSet_53
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

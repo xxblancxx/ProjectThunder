@@ -8,6 +8,7 @@ TagManager:
   - SlowMovingBG
   - Ground
   - Tooltip
+  - Wolf
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class StopScrolling : MonoBehaviour
             var control = other.GetComponent<ForestPlayerMovement>();
             control.canScroll = true;
         }
+      
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -20,5 +21,6 @@ public class StopScrolling : MonoBehaviour
             var control = other.GetComponent<ForestPlayerMovement>();
             control.canScroll = false;
         }
+        
     }
 }
