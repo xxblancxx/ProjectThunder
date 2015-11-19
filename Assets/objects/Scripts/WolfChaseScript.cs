@@ -54,6 +54,7 @@ public class WolfChaseScript : MonoBehaviour
                 StartRunning();
                 var music = player.GetComponent<AudioSource>();
                 music.clip = chaseMusic;
+                music.volume = 0.45f;
                 music.Play();
             }
             else
