@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverScript : MonoBehaviour
+public class FinishGameScript : MonoBehaviour
 {
-    public int levelToLoad;
+
     // Use this for initialization
     void Start()
     {
@@ -13,9 +13,14 @@ public class GameOverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+
+    }
+
+   void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            Application.LoadLevel(levelToLoad);
+            Application.LoadLevel(Application.loadedLevel +2);
         }
     }
 }
